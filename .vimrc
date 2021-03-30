@@ -1,4 +1,4 @@
-colorscheme desert256
+colorscheme desert
 
 " Open where you left off
 if has("autocmd")
