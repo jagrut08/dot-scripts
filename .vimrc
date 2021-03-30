@@ -1,3 +1,5 @@
+colorscheme desert256
+
 " Open where you left off
 if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
@@ -25,9 +27,6 @@ set shiftwidth=4
 " Autosave before :make and other commands; autoreload when file mod
 set autowrite
 set autoread
-
-" Ignore whitespace on diffs
-set diffopt+=iwhite
 
 " Smart case sensitivity
 set ignorecase
