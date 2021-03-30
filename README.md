@@ -1,2 +1,2 @@
 # dot-scripts
-Misc useful doc scripts
+Misc useful dot scripts
