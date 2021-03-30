@@ -1,4 +1,30 @@
 ## ============================================================================
+##                           Environment Variables
+## ============================================================================
+if [ "$TERM" != "screen-256color" ]; then
+    export TERM=xterm-256color
+fi
+
+export GTEST_COLOR=yes
+export EDITOR=vi
+
+# Reduce delay to 0.1 seconds for switching to normal mode with ESC
+export KEYTIMEOUT=1
+
+## ============================================================================
+##                                 Settings
+## ============================================================================
+# Unmap ctrl-s as "stop flow"
+stty stop undef
+
+# Vim mode.  Remove to default to emacs style keys.
+set -o vi
+
+# Update winsize after each command for better line-wrapping
+shopt -s checkwinsize
+
+
+## ============================================================================
 ##                                  Prompt
 ## ============================================================================
 # Returns a non-zero exit code for previous command
